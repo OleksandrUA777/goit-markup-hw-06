@@ -58,7 +58,7 @@
       <section class="section hero">
         <div class="container">
           <h1 class="hero__header">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero__button" data-modal-open>Замовити послугу</button>
+          <button type="button" class="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
 
@@ -481,7 +481,7 @@
 
     <footer class="footer">
       <div class="container footer-wrapper">
-        <div>
+        <div class="adress__wrapper">
           <a href="./index.html" class="footer-logo link"><span class="footer-span">Web</span>Studio</a>
           <address class="address">
             <ul class="list">
@@ -562,6 +562,25 @@
               </a>
             </li>
           </ul>
+        </div>
+
+        
+          <form class="footer-form">
+            <div class="form">
+            <strong class="footer-form__header">Підпишіться на розсилку</strong>
+            <div class="footer-form__wrapper">
+            <label for="email" class="footer-form__label">
+              <input type="email" name="email" id="email" placeholder="E-mail" class="footer-form__input" />
+            </label>
+            <button type="submit" class="button footer-form__button">
+              Підписатися
+              <svg width="24" height="24" class="footer-form__icon footer-form__icon--left">
+                <use href="./images/icons.svg#send"></use>
+              </svg>
+            </button>
+            </div>
+            </div>
+          </form>
         </div>
       </div>
     </footer>
