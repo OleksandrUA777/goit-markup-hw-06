@@ -618,11 +618,11 @@ img {
 
   background-color: #2f303a;
 }
-.footer-wrapper {
+.footer__container {
   display: flex;
   align-items: baseline;
 }
-.adress__wrapper {
+.footer__wrapper {
   margin-right: 70px;
 }
 .footer-logo {
@@ -816,13 +816,12 @@ img {
   width: 30px;
   height: 30px;
 
+  outline: transparent;
+
   cursor: pointer;
   border-radius: 50%;
   background-color: var(--main-white);
   border: 1px solid rgba(0, 0, 0, 0.1);
-}
-.form-field__warning {
-  fill: #e42312;
 }
 .modal__icon {
   transition: fill 250ms var(--main-transition);
@@ -926,6 +925,10 @@ img {
 .form-agreement__checkbox:checked + .form-agreement__icons .form-agreement__unchecked {
   opacity: 0;
 }
+.form-agreement__checkbox:focus + .form-agreement__icons .form-agreement__checked {
+  opacity: 1;
+}
+
 .form-agreement__description {
   display: inline-block;
 
