@@ -73,16 +73,18 @@ img {
   display: flex;
   align-items: center;
 }
-.nav-logo {
+.logo {
+  font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-
+}
+.nav__logo {
   margin-right: 93px;
 
   color: #000;
 }
-.nav-span {
+.logo-span {
   font-family: var(--secondary-font);
 
   color: var(--main-accent);
@@ -618,54 +620,41 @@ img {
 
   background-color: #2f303a;
 }
-.footer__container {
+.footer-container {
   display: flex;
   align-items: baseline;
 }
-.footer__wrapper {
+.footer-wrapper {
   margin-right: 70px;
 }
-.footer-logo {
-  font-family: 'Raleway';
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-
+.footer__logo {
   margin-bottom: 20px;
   display: inline-block;
 
   color: var(--main-white);
 }
-.footer-span {
-  font-family: var(--secondary-font);
-
-  color: var(--main-accent);
-}
-
-.footer-nav {
+.footer__link {
+  font-style: normal;
   line-height: 1.7;
+
+  color: var(--main-white-opacity);
 
   transition: color 250ms var(--main-transition);
 }
-.footer-nav:hover,
-.footer-nav:focus {
+.footer__link:hover,
+.footer__link:focus {
   color: var(--main-accent);
 }
-.footer-list__item {
-  margin-bottom: 9px;
-}
-.footer-list__item:last-child {
-  margin-bottom: 0;
-}
-.footer-list__address {
-  font-style: normal;
-
+.footer__link--grey {
   color: var(--main-white);
 }
-.footer-list__link {
-  font-style: normal;
-  color: var(--main-white-opacity);
+.footer__item {
+  margin-bottom: 9px;
 }
+.footer__item:last-child {
+  margin-bottom: 0;
+}
+
 /* socials */
 .footer-socials {
   margin-right: 93px;
@@ -681,13 +670,13 @@ img {
 
   color: var(--main-white);
 }
-.footer-socials__list {
+.footer-socials-list {
   display: flex;
   gap: 10px;
 }
-.footer-socials-list__item {
+.footer-socials__item {
 }
-.footer-socials-list__link {
+.footer-socials__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -700,8 +689,8 @@ img {
 
   transition: background-color 250ms var(--main-transition);
 }
-.footer-socials-list__link:hover,
-.footer-socials-list__link:focus {
+.footer-socials__link:hover,
+.footer-socials__link:focus {
   background-color: var(--main-accent);
 }
 .footer-socials__icon {
